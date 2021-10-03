@@ -26,9 +26,9 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
-    '~/components/containers',
-    '~/components/global',
-    '~/components/component',
+    '~/components/atoms',
+    '~/components/molecules',
+    '~/components/organisms',
     true
   ],
 
