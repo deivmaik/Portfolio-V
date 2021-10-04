@@ -35,6 +35,7 @@ export default {
         'styled-h2' : Styledh2
     },
     props: {
+        // data props
         content : String,
     }
 }

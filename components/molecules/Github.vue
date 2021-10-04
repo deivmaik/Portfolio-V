@@ -1,15 +1,15 @@
 <template >
-    <wrapper background='#E6F1F8'>
-        <icon name='linkedin'></icon>
+    <wrapper background>
+        <icon name='github'></icon>
     </wrapper>
-</template>
+</template>s
 <script>
 // Styles 
 import styled from 'vue-styled-components'
 import { Wrapper as Base} from '../atoms/Wrapper.vue'
 
 const Wrapper = styled(Base)`
-top: 15rem
+top: 40rem
 `
 // Script
 export default {

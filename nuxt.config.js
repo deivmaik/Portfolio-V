@@ -29,6 +29,7 @@ export default {
     '~/components/atoms',
     '~/components/molecules',
     '~/components/organisms',
+    '~/components/templates',
     true
   ],
 

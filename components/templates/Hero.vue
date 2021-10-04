@@ -1,7 +1,7 @@
 <template>
     <section>
         <Intro/>
-        <LinkedIn/>
+        <Social/>
     </section>
 </template>
 <script>

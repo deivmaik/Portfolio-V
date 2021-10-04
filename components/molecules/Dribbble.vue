@@ -1,6 +1,6 @@
 <template >
-    <wrapper background='#E6F1F8'>
-        <icon name='linkedin'></icon>
+    <wrapper background='#FCEBF1'>
+        <icon name='dribbble'></icon>
     </wrapper>
 </template>
 <script>
@@ -9,7 +9,7 @@ import styled from 'vue-styled-components'
 import { Wrapper as Base} from '../atoms/Wrapper.vue'
 
 const Wrapper = styled(Base)`
-top: 15rem
+top: 30rem
 `
 // Script
 export default {
