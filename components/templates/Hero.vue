@@ -1,8 +1,10 @@
 <template>
     <wrapper>
-        <Social/>
         <Secondary v-bind:content='name' primary/>
+        <Github/>
+        <LinkedIn/>
         <Primary v-bind:content='dev'/>
+        <Dribbble/>
     </wrapper>
 </template>
 <script>
