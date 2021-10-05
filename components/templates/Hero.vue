@@ -16,6 +16,14 @@ import { media } from '../../global'
 export const Wrapper = styled.section`
     padding: 0 2rem;
 
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+    grid-template-rows: auto; 
+    grid-auto-rows: auto; 
+}
+
     ${media.desktop}{
         padding: 0 8rem;
     }

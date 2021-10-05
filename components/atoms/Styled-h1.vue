@@ -8,6 +8,12 @@ import { media } from '../../global'
 
 // A child component needs to explicitly declare the props it expects to receive
 export const Styledh1 = styled.h1`
+    display: grid; 
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 4;
+
     font-size: 5.5rem;
     line-height: 120%;
     text-align: right;
@@ -15,8 +21,12 @@ export const Styledh1 = styled.h1`
     color: #000000;
 
     ${media.desktop}{
-        font-size: 12rem;
-        line-height: 18rem;
+        font-size: 11rem;
+        line-height: 12rem; 
+    }
+
+    ${media.wideScreen}{
+        font-size: 13rem;
     }
 `
 // Script

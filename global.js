@@ -16,11 +16,12 @@ export const colors = {
   
   // Screen sizes to be used in the media variable 
   export const sizes = {
-      small: 320,
+      // small: 320,
+      // regular: 375,
       regular: 375,
       tablet: 768,
       desktop: 992,
-      wideScreen: 1260,
+      wideScreen: 1367,
     }
     
     // em in breakpoints works better cross-browser

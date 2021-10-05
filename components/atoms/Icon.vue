@@ -42,6 +42,7 @@ export const Wrapper = styled.div`
     position: relative;
     margin: 0 auto;
     padding: 1.7rem;
+    cursor:pointer;
 `
 // Script
 export default {

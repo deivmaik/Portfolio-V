@@ -13,8 +13,8 @@ import { media } from '../../global'
 
 const StyledNav = styled.nav`
     display: none;
-    
-    ${media.desktop}{
+
+    ${media.tablet}{
         display: flex;
         padding: 1.5rem 0 ;
         justify-content: center;
@@ -23,6 +23,25 @@ const StyledNav = styled.nav`
         line-height: 175%;
         letter-spacing: 0.5rem;
         color: #727272;
+
+        :before{
+            content: '{';
+            height: 0.1rem;
+            margin: 1.5rem 0;
+            font-size: 2rem;
+            font-weight: 100;
+            color: #727272;
+        }
+        :after{
+            content: '}';
+            height: 0.1rem;
+            margin: 1.5rem 0;
+            font-size: 2rem;
+            font-weight: 100;
+            color: #727272;
+        }
+    }
+        }
     }
 `
 const StyledLi = styled.li`
