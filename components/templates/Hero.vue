@@ -1,18 +1,24 @@
 <template>
     <wrapper>
-        <Secondary v-bind:content='name' primary/>
+        <Secondary v-bind:content='name' />
         <Github/>
         <LinkedIn/>
-        <Primary v-bind:content='dev'/>
+        <Styled-h1 v-bind:content='dev'/>
         <Dribbble/>
+        <Styled-p/>
     </wrapper>
 </template>
 <script>
 // Styles 
 import styled from 'vue-styled-components'
+import { media } from '../../global'
 
 export const Wrapper = styled.section`
     padding: 0 2rem;
+
+    ${media.desktop}{
+        padding: 0 8rem;
+    }
 `
 // Script
 export default {

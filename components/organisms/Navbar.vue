@@ -9,17 +9,21 @@
 <script>
 // Styles 
 import styled from 'vue-styled-components'
+import { media } from '../../global'
 
 const StyledNav = styled.nav`
-    display: flex;
-    padding: 1.5rem 0 ;
-    justify-content: center;
-    /* font styles */
-    font-size: 1.6rem;
-    line-height: 175%;
-    letter-spacing: 0.5rem;
-    color: #727272;
-
+    display: none;
+    
+    ${media.desktop}{
+        display: flex;
+        padding: 1.5rem 0 ;
+        justify-content: center;
+        /* font styles */
+        font-size: 1.6rem;
+        line-height: 175%;
+        letter-spacing: 0.5rem;
+        color: #727272;
+    }
 `
 const StyledLi = styled.li`
     display: flex;
