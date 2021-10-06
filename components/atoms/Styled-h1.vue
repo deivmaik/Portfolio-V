@@ -4,7 +4,7 @@
 <script>
 // Styles 
 import styled from 'vue-styled-components'
-import { media } from '../../global'
+import { media } from '~/global'
 
 // A child component needs to explicitly declare the props it expects to receive
 export const Styledh1 = styled.h1`

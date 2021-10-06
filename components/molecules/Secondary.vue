@@ -4,7 +4,7 @@
 <script>
 // Styles 
 import styled from 'vue-styled-components'
-import { media } from '../../global'
+import { media } from '~/global'
 
 import { Styledh2 } from '../atoms/Styled-h2.vue'
 

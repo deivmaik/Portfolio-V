@@ -8,7 +8,7 @@
 <script>
 // Styles 
 import styled from 'vue-styled-components'
-import { media } from '../../global'
+import { media } from '~/global'
 
 import { Wrapper as Base} from '../atoms/Wrapper.vue'
 

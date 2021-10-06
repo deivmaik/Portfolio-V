@@ -23,6 +23,7 @@ export const colors = {
       desktop: 992,
       wideScreen: 1367,
     }
+  
     
     // em in breakpoints works better cross-browser
     

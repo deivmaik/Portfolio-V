@@ -11,11 +11,11 @@
 <script>
 // Styles 
 import styled from 'vue-styled-components'
-import { media } from '../../global'
+import { media } from '~/global'
 
-export const Wrapper = styled.section`
-    padding: 0 2rem;
+import { Container } from '~/pages/index.vue'
 
+const Wrapper = styled(Container)`
     display: grid; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -23,10 +23,6 @@ export const Wrapper = styled.section`
     grid-template-rows: auto; 
     grid-auto-rows: auto; 
 }
-
-    ${media.desktop}{
-        padding: 0 8rem;
-    }
 `
 // Script
 export default {

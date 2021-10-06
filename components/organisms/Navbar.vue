@@ -9,7 +9,7 @@
 <script>
 // Styles 
 import styled from 'vue-styled-components'
-import { media } from '../../global'
+import { media } from '~/global'
 
 const StyledNav = styled.nav`
     display: none;
