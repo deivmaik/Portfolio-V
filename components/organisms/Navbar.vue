@@ -19,7 +19,7 @@ const StyledNav = styled.nav`
         padding: 1.5rem 0 ;
         justify-content: center;
         /* font styles */
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         line-height: 175%;
         letter-spacing: 0.5rem;
         color: #727272;
@@ -40,9 +40,11 @@ const StyledNav = styled.nav`
             font-weight: 100;
             color: #727272;
         }
+    };
+    ${media.wideScreen}{
+        font-size: 1.6rem;
     }
-        }
-    }
+        
 `
 const StyledLi = styled.li`
     display: flex;

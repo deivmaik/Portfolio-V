@@ -8,6 +8,8 @@ import styled from 'vue-styled-components'
 // A child component needs to explicitly declare the props it expects to receive
 export const h2props = { stroke: Boolean };
 export const Styledh2 = styled('h2', h2props )`
+    margin: 0;
+    padding: 0;
     font-size: 5.5rem;
     line-height: 120%;
     text-align: ${props => props.stroke ? 'left' : 'right'};

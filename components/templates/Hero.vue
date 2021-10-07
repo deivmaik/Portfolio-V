@@ -5,7 +5,7 @@
         <LinkedIn/>
         <Styled-h1 v-bind:content='dev'/>
         <Dribbble/>
-        <Styled-p/>
+        <Scroll-text v-bind:content='arrow'/>
     </wrapper>
 </template>
 <script>
@@ -30,6 +30,7 @@ export default {
         return {
             name: 'hey! I am Michael',
             dev: 'frontend developer',
+            arrow: 'scroll-down to find out more'
         }
     },
     components: {

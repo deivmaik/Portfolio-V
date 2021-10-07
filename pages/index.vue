@@ -2,6 +2,7 @@
     <wrapper>
         <Hero/>
         <Portfolio/>
+        <Footer/>
     </wrapper>
 </template>
 

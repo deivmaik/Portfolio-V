@@ -10,7 +10,6 @@ import { Styledh2 } from '../atoms/Styled-h2.vue'
 
 const Secondary = styled(Styledh2)`
     padding-top: 10rem;
-    margin: 0;
     display:gid;
     grid-row-start: 1;
     grid-column-start: 1;
