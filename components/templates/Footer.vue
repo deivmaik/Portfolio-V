@@ -2,6 +2,7 @@
     <wrapper>
         <Footer-title v-bind:content='title'/>
         <Footer-subtitle v-bind:content='subtitle'/>
+        <Social/>
         <Footer-subtitle v-bind:content='end'/>
     </wrapper>
 </template>
