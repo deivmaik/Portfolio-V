@@ -10,8 +10,9 @@ export const pprops = {
     normal: Boolean
  };
 export const P = styled('p', pprops)`
-    padding-top: 20%;
-    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
     font-size: ${props => props.bigger ? '2.2rem' : '1.6rem'};
     color: ${props => props.normal ? '#4F4E4E' : '#fff'};
     text-align: center;

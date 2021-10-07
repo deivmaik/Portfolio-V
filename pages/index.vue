@@ -13,7 +13,7 @@ import { injectGlobal } from '../global-styles'
 import styled from 'vue-styled-components'
 import { media } from '../global'
 
-const Wrapper = styled.section``
+const Wrapper = styled.div``
 // Container to be use as container in other templates
 export const Container = styled.section`
     padding: 0 2rem;

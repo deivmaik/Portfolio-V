@@ -15,6 +15,7 @@ const Wrapper = styled.div`
 `
 
 const StyledP = styled(P)`
+    
     ${media.tablet}{
         padding-top: 5%;
     }
