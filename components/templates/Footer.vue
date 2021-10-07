@@ -1,7 +1,7 @@
 <template >
     <wrapper>
         <Footer-title v-bind:content='title'/>
-        <Footer-subtitle v-bind:content='subtitle'/>
+        <Copy-text v-bind:content='subtitle'/>
         <Social/>
         <Footer-subtitle v-bind:content='end'/>
     </wrapper>
@@ -20,7 +20,7 @@ export default {
     data() {
         return {
             title: 'Let’s get in touch',
-            subtitle: 'contact@michaeljuarez.me',
+            subtitle: 'hola@michaeljuarez.me',
             end: 'design & code by Michael Juarez'
         }
     },

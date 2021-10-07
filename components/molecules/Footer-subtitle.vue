@@ -9,23 +9,22 @@ import styled from 'vue-styled-components'
 import { media } from '~/global'
 import { P } from '../atoms/Styled-p.vue'
 
-const Wrapper = styled.div`
-    
-    
+const Wrapper = styled.div`  
+padding: 2rem 0;
 `
 
-const StyledP = styled(P)`
+export const StyledP = styled(P)`
     
     ${media.tablet}{
-        padding-top: 5%;
+        padding: 5% 0;
     }
 
     ${media.desktop}{
-        padding-top: 0;
+        padding: 2% 0;
     }
 
     ${media.wideScreen}{
-        padding-top: 5%;
+        padding: 5% 0;
     }
 `
 // Script
@@ -35,7 +34,6 @@ export default {
         'styled-p' : StyledP
     },
     props: {
-        // data props
         content : String,
         default: 'text'
     }
