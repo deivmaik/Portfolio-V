@@ -8,14 +8,23 @@ import { media } from '~/global'
 import { Styledh2 as Base} from '../atoms/Styled-h2.vue'
 
  const Styledh2 = styled(Base)`
-    padding: 0 4rem;
+    padding: 10rem 4rem 2.5rem 4rem;
     text-align: center;
     font-style: normal;
     font-weight: 600;
     font-size: 7.5rem;
-    line-height: 150px;
+    line-height: 120px;
     color: #FFFFFF;
 
+    ${media.desktop}{
+        padding-top: 15rem;
+    }
+
+    ${media.wideScreen}{
+        padding-top: 25rem;
+        padding-bottom: 10rem;
+        font-size: 10rem;
+    }
 `
 // Script
 export default {

@@ -8,15 +8,20 @@
 <script>
 // Styles 
 import styled from 'vue-styled-components'
+import { media } from '~/global'
 
 const Wrapper = styled.div`
+padding: 10% 0;
 display: flex;
 justify-content: center;
 align-items: center;
+${media.desktop}{
+    padding: 5% 0;
+}
 `
 const styledA = styled.a`
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0 2rem;
 `
 
 const Linkedin = styled(LinkedinSVG)`
