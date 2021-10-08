@@ -4,10 +4,15 @@
 <script>
 // Styles 
 import styled from 'vue-styled-components'
+import { media } from '~/global'
 import { P } from '../atoms/Styled-p.vue'
 
 const styledP = styled(P)`
-margin-top: 2%;
+margin-top: 10%;
+${media.desktop}{
+    margin-top: 2%;
+    font-size: 2.2rem;
+}
 `
 // Script
 export default {
