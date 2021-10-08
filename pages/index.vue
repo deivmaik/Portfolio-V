@@ -1,7 +1,8 @@
 <template>
     <wrapper>
         <Hero/>
-        <Portfolio/>
+        <Portfolio-title/>
+        <Portfolio-list/>
         <Footer/>
     </wrapper>
 </template>
