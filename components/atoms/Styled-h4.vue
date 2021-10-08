@@ -14,6 +14,10 @@ export const Styledh4 = styled.h4`
     font-weight: 400;
 
     ${media.desktop}{
+        font-size: 3.3rem;
+    }
+
+    ${media.wideScreen}{
         font-size: 4rem;
         font-weight: 500;
     }

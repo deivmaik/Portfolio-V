@@ -1,5 +1,5 @@
 <template >
-    <styled-p bigger normal start >{{content}}</styled-p>  
+    <styled-p  normal start >{{content}}</styled-p>  
 </template>
 <script>
 // Styles 

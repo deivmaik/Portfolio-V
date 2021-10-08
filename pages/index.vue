@@ -2,7 +2,7 @@
     <wrapper>
         <Hero/>
         <Portfolio-title/>
-        <Portfolio-list/>
+        <Portfolio-container/>
         <Footer/>
     </wrapper>
 </template>

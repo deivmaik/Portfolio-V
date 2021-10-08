@@ -9,8 +9,13 @@ import { P } from '../atoms/Styled-p.vue'
 
 const styledP = styled(P)`
 margin-top: 10%;
+
 ${media.desktop}{
     margin-top: 2%;
+    font-size: 1.8rem;
+}
+
+${media.wideScreen}{
     font-size: 2.2rem;
 }
 `

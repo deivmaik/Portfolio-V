@@ -1,12 +1,14 @@
 <template >
     <wrapper>
         <card v-for='item in items' v-bind:key='item.id'>
-            <flex>
-                <styled-h4  v-bind:content='item.title'></styled-h4>
-                <styled-p >{{item.subtitle}}</styled-p>
-            </flex>
-            <primary-p v-bind:content='item.job'></primary-p>
-            <secondary-p v-bind:content='item.tools'></secondary-p>
+            <grid>
+                <container>
+                    <styled-h4  v-bind:content='item.title'></styled-h4>
+                    <primary-p v-bind:content='item.job'></primary-p>
+                    <secondary-p v-bind:content='item.tools'></secondary-p>
+                </container>
+                <redirect v-bind:href='item.path' target='_blank'><arrow>&#129122;</arrow></redirect>
+            </grid>
         </card> 
     </wrapper>
 </template>
@@ -14,13 +16,17 @@
 // Styles 
 import styled from 'vue-styled-components'
 import { media } from '~/global'
-import { Container } from '~/pages/index.vue'
 import { P } from '../atoms/Styled-p.vue'
 
-const Wrapper = styled(Container)`
-    background: #F2F6FF;
+const Wrapper = styled.div`
+    width: 100%;
+        ${media.desktop}{
+        width: 66%;
+    }
 `
 const Card = styled.div`
+width: 100%;
+
 &:not(:last-child):after{
     content:'';
     display:block;
@@ -28,12 +34,24 @@ const Card = styled.div`
     height:0.1rem;
     width: 25rem;
     ${media.desktop}{
-        width: 75rem;
+        width: 50rem;
     }
 }
 `
-const Flex = styled.div`
-    display: flex;
+const Container = styled.div`
+    display:grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 2;
+    grid-column-end: 4;
+`
+
+const Grid = styled.div`
+    display: grid; 
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 `
 
 const StyledP = styled(P)`
@@ -41,9 +59,38 @@ const StyledP = styled(P)`
     ${media.tablet}{
         display:block;
         margin-top: 6.5%;
-        margin-left: 2%;
+        padding-right: 2%;
         color: #5C5B5B;
         border-radius: 1rem;
+    }
+`
+const Redirect = styled.a`
+    display:grid;
+    grid-row-start: 1;
+    grid-column-start: 4;
+
+    grid-row-end: 2;
+    grid-column-end: 5;
+
+    margin: 25% 0 0 0;
+    padding: 0;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 10rem;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background: #FCB720;
+        border: none;
+        box-shadow: 0 0 0.5rem 0.5rem #FAE5B7;
+    }
+`
+const Arrow = styled.span`
+    font-size: 2.5rem;
+    padding: 2.5rem;
+    transition: all .3s ease-in-out;
+    &:hover{
+        font-weight: 400;
+        transform: rotate(-45deg);
     }
 `
 // Script
@@ -57,7 +104,7 @@ export default {
                     subtitle:'proptech startup.',
                     job:'website development & UI Design',
                     tools: 'Figma & React.js',
-                    path:'/'
+                    path:'https://www.laconstru.com/'
                 },
                 {
                     id: 2,
@@ -73,7 +120,7 @@ export default {
                     subtitle:'personal project',
                     job:'website development & UI Design ',
                     tools: 'Figma & React.js',
-                    path:'/',
+                    path:'https://www.miswip.com/',
                     fetured: true
                 },
                 {
@@ -82,7 +129,7 @@ export default {
                     subtitle:' ',
                     job:'frontend development & UI Design',
                     tools: 'Figma & Nuxt.js (Vue)',
-                    path:'/'
+                    path:'https://github.com/deivmaik/Portfolio-V'
                 }
             ]
         }
@@ -90,8 +137,11 @@ export default {
     components: {
         'wrapper': Wrapper,
         'card': Card,
-        'flex': Flex,
+        'grid': Grid,
+        'container': Container,
         'styled-p': StyledP,
+        'redirect': Redirect,
+        'arrow': Arrow
     }
 }
 </script>
