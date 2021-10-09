@@ -51,7 +51,6 @@ const StyledLi = styled.li`
     align-items: center;
     margin: 0 2rem;
 `
-
 // Script
 export default {
     data() {

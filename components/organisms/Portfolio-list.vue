@@ -7,7 +7,7 @@
                     <primary-p v-bind:content='item.job'></primary-p>
                     <secondary-p v-bind:content='item.tools'></secondary-p>
                 </container>
-                <redirect v-bind:href='item.path' target='_blank'><arrow>&#129122;</arrow></redirect>
+                <redirect v-bind:href='item.path' target='_blank'><arrow></arrow></redirect>
             </grid>
         </card> 
     </wrapper>
@@ -84,9 +84,9 @@ const Redirect = styled.a`
         box-shadow: 0 0 0.5rem 0.5rem #FAE5B7;
     }
 `
-const Arrow = styled.span`
-    font-size: 2.5rem;
-    padding: 2.5rem;
+const Arrow = styled(ArrowSVG)`
+    width: 50%;
+    padding: 2.5rem 2rem;
     transition: all .3s ease-in-out;
     &:hover{
         font-weight: 400;
@@ -94,6 +94,8 @@ const Arrow = styled.span`
     }
 `
 // Script
+import ArrowSVG from '~/assets/svg/arrow.svg'
+
 export default {
     data() {
         return {
@@ -112,7 +114,7 @@ export default {
                     subtitle:'proptech startup.',
                     job:'frontend development & UI Design ',
                     tools: 'Figma & Next.js (React)',
-                    path:'/'
+                    path:'https://dribbble.com/shots/16618106-LaConstru-B2B'
                 },
                 {
                     id: 3,

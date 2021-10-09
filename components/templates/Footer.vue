@@ -14,7 +14,7 @@ import { Container } from '~/pages/index.vue'
 
 const Wrapper = styled(Container)`
     background: #000;
-    height: 100vh
+    height: 100%;
     ${media.tablet}{
         height: auto;
     }
@@ -27,7 +27,7 @@ const Wrapper = styled(Container)`
 export default {
     data() {
         return {
-            title: 'Let’s get in touch',
+            title: 'Let’s get in touch !',
             email: 'hola@michaeljuarez.me',
             copyright: 'design & code by Michael Juarez'
         }

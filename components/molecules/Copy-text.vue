@@ -22,6 +22,7 @@ const StyledP = styled(P)`
     border: 2px solid #656565;
     border-radius: 1rem;
     transition: all .3s ease-in-out;
+    color: #C4C4C4;
     &:hover {
         border: 0.2rem solid #fff;
     }
@@ -56,7 +57,7 @@ export default {
 	        duration : 5000,
             //close on click 
             action : {
-                text : "close",
+                text : "ok",
                 onClick : (e, toastObject) => {
                     toastObject.goAway(0);
                 }

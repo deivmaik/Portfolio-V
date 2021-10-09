@@ -16,6 +16,9 @@ import { Styledh2 as Base} from '../atoms/Styled-h2.vue'
     line-height: 120px;
     color: #FFFFFF;
 
+    ${media.tablet}{
+        font-size: 10rem;
+    }
     ${media.desktop}{
         padding-top: 15rem;
     }

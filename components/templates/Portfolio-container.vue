@@ -14,6 +14,14 @@ const Wrapper = styled(Container)`
     background: #F2F6FF;
     display:flex;
     height: 100vh;
+
+    ${media.desktop}{
+    padding: 5% 0 10% 0;
+    }
+
+    ${media.wideScreen}{
+    padding: 0;
+    }
 `
 const Blank = styled.div`
 display:none;

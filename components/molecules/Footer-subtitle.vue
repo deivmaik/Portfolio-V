@@ -15,6 +15,7 @@ padding: 0;
 
 export const StyledP = styled(P)`
     padding-top: 20%;
+    padding-bottom: 20%;
     ${media.tablet}{
         padding: 5% 0;
     }

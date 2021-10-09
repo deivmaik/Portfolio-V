@@ -1,7 +1,7 @@
 <template >
     <wrapper>
         <styled-a href='https://www.linkedin.com/in/michaelbiz/' target="_blank"><linkedin></linkedin></styled-a>
-        <styled-a href='https://dribbble.com/michaeljuarez' target="_blank"><dribbble></dribbble></styled-a>
+        <styled-a href='https://dribbble.com/deivmaik' target="_blank"><dribbble></dribbble></styled-a>
         <styled-a href='https://github.com/deivmaik' target="_blank"><github></github></styled-a>
     </wrapper>
 </template>
