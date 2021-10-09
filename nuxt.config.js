@@ -45,7 +45,10 @@ export default {
   modules: [
     'nuxt-svg-loader',
     'vue-scrollto/nuxt',
+    '@nuxtjs/toast',
   ],
+
+  
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

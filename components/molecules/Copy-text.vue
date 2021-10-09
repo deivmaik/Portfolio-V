@@ -1,6 +1,6 @@
 <template >
-    <wrapper>
-        <styled-p @click='copy'>{{content}}<clone></clone></styled-p>
+    <wrapper @click='toast'>
+        <styled-p @click='copy' >{{content}}<clone></clone></styled-p>
     </wrapper>
 </template>
 <script>
@@ -48,6 +48,20 @@ export default {
             }catch(err){
                 throw (err)
             }
+        },
+        toast(){
+            this.$toasted.show("copied to clipboard !", { 
+	        theme: "toasted-primary", 
+	        position: "bottom-center", 
+	        duration : 5000,
+            //close on click 
+            action : {
+                text : "close",
+                onClick : (e, toastObject) => {
+                    toastObject.goAway(0);
+                }
+            }
+        })
         }
     },
     props: {
