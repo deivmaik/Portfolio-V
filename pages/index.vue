@@ -1,9 +1,9 @@
 <template>
-    <wrapper>
+    <wrapper id="home">
         <Hero/>
-        <Portfolio-title/>
-        <Portfolio-container/>
-        <Footer/>
+        <Portfolio-title id="portfolio"/>
+        <Portfolio-container />
+        <Footer id="contact"/>
     </wrapper>
 </template>
 

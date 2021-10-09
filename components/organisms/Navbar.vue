@@ -2,7 +2,7 @@
     <styled-nav>
         <styled-li v-for='link in links' v-bind:key='link.id'>
             <p>{{link.id}}.</p>
-            <router-link :to="link.path">{{ link.text }}</router-link>
+            <router-link :to="link.path" v-scroll-to="'link.path'">{{ link.text }}</router-link>
         </styled-li>
     </styled-nav>
 </template>
@@ -60,27 +60,27 @@ export default {
                 {
                     id: 0,
                     text:'home',
-                    path:'/'
+                    path:'#home'
                 },
                 {
                     id: 1,
                     text:'portfolio',
-                    path:'/'
+                    path:'#portfolio'
                 },
-                {
-                    id: 2,
-                    text:'about',
-                    path:'/'
-                },
+                // {
+                //     id: 2,
+                //     text:'about',
+                //     path:'#about'
+                // },
+                // {
+                //     id: 3,
+                //     text:'blog',
+                //     path:'#blog'
+                // },
                 {
                     id: 3,
-                    text:'blog',
-                    path:'/'
-                },
-                {
-                    id: 4,
                     text:'contact',
-                    path:'/'
+                    path:'#contact'
                 }
             ]
         }
