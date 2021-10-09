@@ -5,7 +5,9 @@
 // Styles 
 import styled from 'vue-styled-components'
 
-export const divprops = { background: String };
+export const divprops = { 
+    background: String
+ };
 export const Wrapper = styled('div', divprops )`
 position: absolute;
 width: 6.5rem;

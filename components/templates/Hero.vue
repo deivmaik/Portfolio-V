@@ -22,6 +22,7 @@ const Wrapper = styled(Container)`
    
     grid-template-rows: auto; 
     grid-auto-rows: auto; 
+    height: 85vh;
 }
 `
 // Script

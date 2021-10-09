@@ -35,3 +35,4 @@ export const colors = {
       desktop:    `@media(min-width: ${sizes.desktop / 16}em)`,
       wideScreen: `@media(min-width: ${sizes.wideScreen / 16}em)`,
     }
+

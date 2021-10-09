@@ -5,9 +5,23 @@
 </template>
 <script>
 // Styles 
-import styled from 'vue-styled-components'
+import styled , { keyframes } from 'vue-styled-components'
 import { media } from '~/global'
 import { P } from '../atoms/Styled-p.vue'
+
+export const FadeIn = keyframes`
+    from { opacity: 0; } 
+
+     0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 0;
+	}
+`;
 
 const Wrapper = styled.div`
     display:grid;
@@ -41,6 +55,8 @@ const StyledP = styled(P)`
     ${media.wideScreen}{
         padding-top: 5%;
     }
+    animation: ${FadeIn} 3s ease-in-out infinite;
+
 `
 // Script
 export default {
