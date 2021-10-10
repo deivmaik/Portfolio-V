@@ -14,7 +14,9 @@ import { injectGlobal } from '../global-styles'
 import styled from 'vue-styled-components'
 import { media } from '../global'
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+    font-family: 'Prompt', sans-serif;
+`
 // Container to be use as container in other templates
 export const Container = styled.section`
     padding: 0 2rem;

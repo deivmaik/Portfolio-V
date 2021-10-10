@@ -9,11 +9,22 @@
 </template>
 <script>
 // Styles 
-import styled from 'vue-styled-components'
+import styled , { keyframes } from 'vue-styled-components'
 import { media } from '~/global'
-import { Floating } from '../molecules/LinkedIn.vue'
 
 import { Wrapper as Base} from '../atoms/Wrapper.vue'
+
+export const Floating = keyframes`
+    0% {
+		transform: translatey(0);
+	}
+	50% {
+		transform: translatey(-2.5rem);
+	}
+	100% {
+		transform: translatey(0);
+	}
+`;
 
 const Container = styled.div`
     display: grid;
@@ -58,3 +69,4 @@ export default {
     }
 }
 </script>
+
